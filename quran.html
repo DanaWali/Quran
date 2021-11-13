@@ -1,0 +1,170 @@
+<html>
+<head>
+<style>
+p{
+	font-size:90px;
+	float:left;
+	width:50%;
+	text-align:center;
+	}
+a:hover{
+   color:blue;
+   cursor: pointer;
+   }
+
+.hide {
+  display: none;
+	}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: blue;
+}
+.tt {
+  position: relative;
+  display: inline-block;
+  font-family:amiri;
+  font-size:24px;
+  cursor:pointer;
+  border:1px red solid;
+}
+
+.tt .ttt {
+  visibility: hidden;
+  width:120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tt .ttt::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+.tt:hover .ttt {
+  visibility: visible;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<a onclick="playn2()"><p>
+<span title="دەربارەی">
+عَنِ
+</span>
+
+<span title="ئەو هەواڵەی">
+النَّبَإِ
+</span>
+
+<span title="زۆرگەورەکە">
+الْعَظِيمِ
+</span>
+
+٢
+
+ </p><a/>
+ 
+<a onclick="playn1()"><p>
+
+<span title="دەربارەی چی">
+عَمَّ 
+</span>
+
+<span title="پرسیارلە یەکتر دەکەن">
+يَتَسَاءَلُونَ 
+</span>
+
+١
+
+</p><a/>
+
+<a onclick="playn4()"><p>
+
+<span title="نەخێر">
+كَلَّا 
+</span>
+
+<span title="لەداهاتوێکی نزیک دەزانن">
+سَيَعْلَمُونَ
+</span>
+
+٤
+
+</p><a/>
+
+<a onclick="playn3()"><p>
+
+<span title="ئەوەی">
+الَّذِي
+</span>
+
+<span title="ئەوان">
+هُمْ
+</span>
+
+<span title="تیایدا">
+فِيهِ
+</span>
+
+<span title="جیاوازن و مشتو مڕیانە">
+مُخْتَلِفُونَ 
+</span>
+
+
+
+
+٣</p><a/>
+
+
+
+
+<script>
+
+      function playn1() {
+        var audio = document.getElementById("naba-1");
+        audio.play();
+      }
+	  
+	  function playn2() {
+        var audio = document.getElementById("naba-2");
+        audio.play();
+      }
+	  
+	  function playn3() {
+        var audio = document.getElementById("naba-3");
+        audio.play();
+      }
+	  
+	  function playn4() {
+        var audio = document.getElementById("naba-4");
+        audio.play();
+      }
+    </script>
+
+
+
+
+</body>
+	<audio id="naba-1" src="naba-1.mp3"></audio>
+	<audio id="naba-2" src="naba-2.mp3"></audio>
+	<audio id="naba-3" src="naba-3.mp3"></audio>
+	<audio id="naba-4" src="naba-4.mp3"></audio>
+
+
+</html>
